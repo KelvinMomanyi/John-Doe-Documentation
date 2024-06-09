@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="icon" href="assets/fav.png" type="image/x-icon"/>
+    <title>John Doe Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            font-family: 'Bebas-Neue', sans-serif;
+            color: #0287e0;
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav span {
+            color: #0287e0;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h3 {
+            color: #0287e0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        ul li h3 {
+            margin-bottom: 5px;
+        }
+
+        ul li p {
+            margin: 0 0 10px 0;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        section ul li::before {
+            content: "•";
+            color: #0287e0;
+            margin-right: 10px;
+        }
+
+        section h4 {
+            color: #0287e0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>John Doe</span>
+    </nav>
+    <div class="container">
+        <span>Here's a comprehensive documentation for John Doe Portfolio Template</span>
+
+        <h3>HTML Structure:</h3>
+        
+        <p>The HTML code consists of various sections of a website including a preloader, navigation bar, sidebar, header, work/portfolio section, about section, services section, hire me section, testimony section, clients section, blog section, contact section, and footer. Each section is marked with a corresponding `id` attribute for easy navigation.</p>
+        <ul>
+            <li>
+                <h3>Preloader:</h3>
+                <p>A div with the class `preloader` is used for displaying a loading animation until the page content is fully loaded.</p>
+            </li>
+            <li>
+                <h3>Navigation Bar:</h3>
+                <p>A navigation bar with the class `navbar` is included. It contains links to different sections of the website such as Home, Portfolio, About, Services, Client, and Contact. It also includes a toggle button for mobile responsiveness.</p>
+            </li>
+            <li>
+                <h3>Sidebar:</h3>
+                <p>A sidebar is included with links similar to the navigation bar. It is hidden by default and can be toggled using a button.</p>
+            </li>
+            <li>
+                <h3>Header:</h3>
+                <p>The header section contains a welcome message, name, and a call-to-action button.</p>
+            </li>
+            <li> 
+                <h3>Work/Portfolio Section:</h3>
+                <p>This section displays a grid of items categorized under different types of work like Web Development, Mobile App Development, Graphic Design, etc.</p>
+            </li>
+            <li>
+                <h3>About Section:</h3>
+                <p>This section provides information about the website owner, including a profile picture, name, a brief introduction, skills with progress bars, and social media links.</p>
+            </li>   
+            <li>
+                <h3>Services Section:</h3>
+                <p>This section showcases various services offered, each represented by a card with an icon and a brief description.</p>
+            </li>
+            <li>
+                <h3>Testimony Section:</h3>
+                <p>Testimonials from clients are displayed using a carousel.</p>
+            </li>
+            <li>
+                <h3>Clients Section:</h3>
+                <p>A list of client logos is displayed.</p>
+            </li>
+            <li>
+                <h3>Blog Section:</h3>
+                <p>This section displays links to recent blog posts.</p>
+            </li>
+            <li>
+                <h3>Contact Section:</h3>
+                <p>A contact form is provided for users to send messages. Additionally, contact information such as phone number, email, and address is displayed.</p>
+            </li>    
+            <li>
+                <h3>Footer:</h3>
+                <p>The footer includes the website owner's name, social media links, and copyright information.</p>
+            </li>
+            <li>
+                <h3>CSS:</h3>
+                <p>The CSS code contains styles for various HTML elements used in the webpage. It includes general styles for resetting margins and paddings, as well as specific styles for each section, such as preloader, navigation bar, sidebar, header, etc.</p>
+            </li>
+        </ul>
+       
+            <h2>Blog page</h2>
+            <ul>
+                <li>
+                    <h3>Preloader</h3> 
+                    Displays a loading animation while the webpage content is being loaded. 
+                    The `.preloader` class defines the container for the loading animation.
+                    The `.circle` class defines the animated circle element.
+                </li> 
+                <li>
+                    <h3>Navigation Bar</h3> 
+                    Provides navigation links to different sections of the webpage.
+                    The `nav` element with classes `navbar`, `navbar-expand-lg`, `sticky`, `fixed-top`, and `r-nav`.
+                    Contains a `div` with class `container`.
+                    Includes an `a` tag element with class `navbar-brand` for the website logo and author name.
+                    Includes a `button` element with classes `navbar-toggler`, `hamburger`, and `nav-open-btn` for mobile navigation.
+                    The navigation links are structured within a `ul` element with class `navbar-nav`.
+                </li>
+                <li>
+                    <h3>Sidebar</h3>
+                    Presents a collapsible sidebar with navigation links.
+                    Contains a `div` with class `mainSideBar` for the main sidebar content.
+                    Includes a `ul` element with class `sidebar-list` for the navigation links.
+                    The collapsible effect is achieved using an overlay `div` with class `overlay`.
+                </li>
+                <li>
+                    <h3>Header</h3> 
+                    Displays the main title and introductory content of the webpage.
+                    The `header` element with id `home`.
+                    Contains a `div` element with classes `container-fluid` and `header-content`.
+                    The content is structured within a `div` element with class `row` and centered alignment.
+                    Includes a heading `h1` and paragraph `p` with animation effects.
+                </li>
+                <li>
+                    <h3>About Section</h3> 
+                    Provides detailed information about software engineering topics.
+                    Contains a `div` element with class `container` for content organization.
+                    The content is divided into sections using nested `div` elements with appropriate classes.
+                    Includes headings `h2` and paragraphs `p` describing various aspects of the topic.
+                    Accompanied by images displayed using `img` elements.
+                </li>
+                <li>
+                    <h3>Comments Section</h3> 
+                    Displays user comments along with their profile pictures and timestamps.
+                    Contains multiple `div` elements with classes `comment` or `reply` to represent comments and replies.
+                    Each comment includes a `div` with class `comment-header` for user information and a `div` with class `comment-content` for the comment text.
+                    Profile pictures are displayed using `img` elements.
+                    Timestamps are represented by `span` elements with appropriate classes.
+                </li>
+                <li>
+                    <h3>Contact Section</h3> 
+                    Provides a form for users to submit comments or inquiries.
+                    Contains a `form` element with input fields for Name, Email, Subject, and Message.
+                    The form includes appropriate `input` and `textarea` elements with placeholder text.
+                    Submission is triggered by a `button` element with class `btn r-btn`.
+                </li>
+                <li>
+                    <h3>Footer</h3> 
+                    Displays author information, social media links, and copyright notice.
+                    Contains a `div` element with class `container` for content alignment.
+                    Author information and social media links are organized within `div` and `ul` elements.
+                    Copyright notice is displayed using a `p` element.
+                </li>
+                <li>
+                    <h3>JavaScript Libraries and Scripts</h3>
+                    Utilizes various JavaScript libraries and custom scripts to enhance functionality and interactivity.
+                    - **Libraries Used**:
+                        - jQuery (for DOM manipulation and event handling)
+                        - AOS (Animate on Scroll) library (for animation effects)
+                        - Typed.js (for typewriter-style text animation)
+                        - External JavaScript files are included at the end of the document to handle functionality such as form submission, animation, and initialization of libraries.
+                </li>
+            </ul>
+            <h3>JavaScript:</h3>
+            <p>The JavaScript code includes libraries like jQuery, Popper.js, Bootstrap, Waypoints, Owl Carousel, Filterizr, AOS (Animate On Scroll), Tilt.js, and Typed.js. It also includes a custom script (`app.js`) for additional functionality like preloader, smooth scrolling, filtering portfolio items, etc.</p>
+            <h4>External Libraries:</h4>
+            <ul>
+                <li>1. jQuery: A fast, small, and feature-rich JavaScript library.</li>
+                <li>2. Popper.js: A positioning engine to make tooltips and popovers work.</li>
+                <li>3. Bootstrap: A popular front-end framework for building responsive websites.</li>
+                <li>4. Waypoints: A library that makes it easy to execute a function whenever you scroll to an element.</li>
+                <li>5. Owl Carousel: A responsive carousel slider plugin.</li>
+                <li>6. Filterizr: A jQuery plugin for sorting, filtering, and shuffling grid items.</li>
+                <li>7. AOS (Animate On Scroll): A library to animate elements as they scroll into view.</li>
+                <li>8. Tilt.js: A tiny requestAnimationFrame powered 60+fps lightweight parallax tilt effect for jQuery.</li>
+                <li>9. Typed.js: A JavaScript library that types out sentences or strings of text.</li>
+            </ul>
+            <p>The JavaScript libraries have been used to add interactivity to the website. Here's a breakdown of what the code does:</p>
+            <ul>
+                <li>1. Preloader Animation: The preloader animation is removed once the window has fully loaded.</li>
+                <li>2. Sticky Navigation: The navigation bar becomes sticky (fixed to the top) after scrolling down a certain distance. The `hideNav` function is used to show or hide the navigation bar based on the scroll direction.</li>
+                <li>3. Typed.js: This library is used to create a typing effect in the header, cycling through different strings like "John Doe", "a Developer", "a Designer", and "a Businessman".</li>
+                <li>4. Progress Bars: When the section with the ID `exp-id` scrolls into view, the progress bars animate to their respective widths to indicate skill levels.</li>
+                <li>5. Owl Carousel: This initializes an Owl Carousel for the testimonial section, making it autoplay with a timeout of 4 seconds.</li>
+                <li>6. Filterizr: This library is used to filter and sort the portfolio items with animation.</li>
+                <li>7. Navbar Toggle: This code toggles the visibility of the navbar and overlay when the navbar toggler button is clicked.</li>
+            </ul>
+    </div>
+</body>
+<!-- <body>
+    <div>
+        <h1>Ultra Responsive Design</h1>
+        <ul>
+            <li>Modern Developer Portfolio</li>
+            <li>Retina Ready Design</li>
+        </ul>
+
+        <div class="section-title">Features:</div>
+
+        <div class="section-title">Extensive Theme Options:</div>
+        <ul>
+            <li>General Settings</li>
+            <li>Header Options</li>
+            <li>Footer Options</li>
+            <li>Portfolio Options</li>
+            <li>Blog Options</li>
+            <li>Typography</li>
+        </ul>
+
+        <div class="section-title">Support:</div>
+        <ul>
+            <li>5 Star Customer Support</li>
+            <li>Support Ticket System</li>
+            <li>Extensively Written Documentation</li>
+        </ul>
+
+        <div class="section-title">Technical Details:</div>
+        <ul>
+            <li>Valid HTML5 / CSS3</li>
+            <li>SEO Optimized</li>
+            <li>550+ Retina ready icons</li>
+            <li>And Much More!</li>
+        </ul>
+
+        <div class="section-title">Image Credits</div>
+        <p>All images come from the following authors and sites:</p>
+        <ul>
+            <li>Unsplash</li>
+        </ul>
+        <div class="section-title">Online Documentation</div>
+        <ul>
+            <li><a href="https://riftmotors.com/">Documentation</a></li>
+        </ul>
+        <p class="important">IMPORTANT: Images used only for demonstration in demo pages. They aren’t included to package that you download from Themeforest.</p>
+    </div>
+</body> -->
+</html>
